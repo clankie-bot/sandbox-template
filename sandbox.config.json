@@ -1,0 +1,9 @@
+{
+  "workdir": "example",
+  "timeoutMs": 60000,
+  "env": {},
+  "checks": [
+    { "name": "unit", "run": ["node", "--test", "test/add.test.mjs"] },
+    { "name": "smoke", "run": ["node", "src/cli.mjs", "2", "3"], "expectStdout": "5" }
+  ]
+}

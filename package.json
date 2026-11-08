@@ -1,0 +1,22 @@
+{
+  "name": "sandbox-template",
+  "version": "0.0.0",
+  "description": "A local, disposable sandbox in which agents build and test, with checks.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clankie-bot/sandbox-template.git"
+  },
+  "private": true,
+  "type": "module",
+  "bin": {
+    "sandbox": "./bin/sandbox.mjs"
+  },
+  "engines": {
+    "node": ">=22.5"
+  },
+  "scripts": {
+    "check": "node bin/sandbox.mjs check",
+    "test": "node --test test/sandbox.test.mjs"
+  }
+}
